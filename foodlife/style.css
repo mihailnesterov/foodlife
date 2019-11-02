@@ -1,0 +1,184 @@
+/*!
+Theme Name: foodlife.shop
+Theme URI: http://underscores.me/
+Author: M. Nesterov
+Author URI: http://underscores.me/
+Description: foodlife.shop wp theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: foodlife
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+foodlife.shop is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+body {
+  padding-top: 56px;
+}
+
+.text-underline {
+    text-decoration:underline;
+}
+.text-underline:hover {
+    opacity:0.8;
+}
+
+a img:hover {
+  opacity: 0.8;
+}
+
+.card img {
+  /*object-fit: cover;
+  height: 220px;*/
+  padding:1em;
+}
+
+.item-text p {
+	margin:0;
+	padding:0;
+	padding: 0.2em 0;
+}
+
+/* logo */
+.navbar-brand img {
+    width: 250px;
+}
+
+/* таблица товаров в корзине */
+.table tbody th,.table tbody td {
+    vertical-align: middle;
+}
+.table tbody td .fa-times {
+    font-size: 1em;
+}
+.table tbody td .fa-times:hover {
+    opacity:0.8;
+    color:#fff !important;
+}
+.table tbody tr.total {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.table tbody input.qty {
+    display:inline-block !important;
+    width:80px !important;
+    padding-left:1.4em;
+}
+
+/* правка поля кол-во в карточке товара */
+.qty-single {
+    display:inline-block !important;
+    width:100px !important;
+    padding-left:1.4em;
+}
+
+/* правка полей ввода */
+.form-row {
+    display: block !important;
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+}
+
+footer a {
+  color: #bbb;
+  text-decoration: underline;
+}
+
+footer .footer-block ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0.5em 0 1.5em 0;
+}
+
+footer .footer-block ul li {
+  color: #aaa;
+  line-height: 1.8;
+}
+
+#toTop {
+	width:1.9em;
+	background-color: #007bff;
+	text-align:center;
+	padding:0.2em;
+	position:fixed;
+	bottom:0.7em;
+	right:1em;
+	cursor:pointer;
+	display:none;
+	color:#fff;
+	font-size:1.7em;
+	opacity: 0.95;
+	z-index: 999;
+	
+	-webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+#toTop:hover {
+	opacity: 0.8;
+}
+/* 
+woocommerce кнопка в корзину - скрыть появляющееся сообщение "просмотр корзины" 
+*/
+.added_to_cart.wc-forward {
+    display: none !important;
+}
+
+/* woocommerce оформление заказа - варианты доставки */
+#order_review {
+    padding:0;
+}
+
+#shipping_method li {
+    padding-bottom:0.5em;
+    border-bottom: 1px #f5f5f5 solid;
+}
+#shipping_method li:last-child {
+    border-bottom: none;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    /*.qty-single {
+        display:block !important;
+        margin:0 auto !important;
+        max-width:100px !important;
+        padding-left:0;
+    }*/
+    .navbar-brand img {
+        width: 200px;
+        padding: 7px 0;
+    }
+    
+    #phone-on-mobile {
+        float:left;
+    }
+    .s-header__basket-wr {
+        float:right;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
