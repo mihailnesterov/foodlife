@@ -40,6 +40,23 @@
                     <?php woocommerce_breadcrumb( $args ); ?>
                 </div>
 
+                <!-- action banner -->
+                <div class="col-12 d-none border my-2 animated fadeIn">
+                    <div class="row p-2">
+                        
+                        <div class="col-8 col-md-11 text-center p-2">
+                            <h4 class="mb-3">Подарок при заказе от 5000 руб.</h4>
+
+                            <p class="mb-1">Банка семги в оливковом масле (стекло / 200 гр)</p>
+                            <p class="mb-1">Бесплатная доставка</p>
+                            <p class="mb-1">Купон на скидку 300 руб.</p>
+                        </div>
+                        <div class="col-4 col-md-1 p-3 align-middle">
+                            <img src="/wp-content/uploads/2019/10/semga-200-shirota-50-1.jpg" alt="Семга в масле в подарок" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-12 text-center p-3 my-3">
                     <h1><?= the_title() ?></h1>
                     <?php 
