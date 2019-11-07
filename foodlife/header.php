@@ -94,6 +94,9 @@
                     <li class="nav-item border-bottom">
                         <a class="nav-link" href="/contacts">Контакты</a>
                     </li>
+                    <li class="nav-item border-bottom">
+                        <a class="nav-link" href="/postavschikam">Поставщикам</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -112,7 +115,7 @@
                                 for($i=0;$i<count($categories);$i++){
                                     $category = get_term( $categories[$i], 'product_cat' ); ?>
                                     <li class="nav-item">
-                                        <a class="nav-link text-white" href="<?= get_term_link($category->term_id) ?>">
+                                        <a class="nav-link px-2 text-white" href="<?= get_term_link($category->term_id) ?>">
                                            <?= $category->name ?> 
                                             <span class="badge badge-pill badge-warning"><?= $category->count ?> </span>
                                         </a>
@@ -120,6 +123,9 @@
                                 <?php } ?>
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="/contacts">Контакты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/postavschikam">Поставщикам</a>
                                 </li>
                             </ul>
                         </div>
