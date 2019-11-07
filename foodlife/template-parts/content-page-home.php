@@ -28,6 +28,7 @@
                         <img class="d-block img-fluid" src="<?= get_template_directory_uri() ?>/images/1.jpg" alt="slide 1">
                         <div class="carousel-caption d-none d-md-block">
                             <h2>Мясо краба с доставкой по Москве</h2>
+							<h4 class="d-none">100% настоящего камчатского краба</h4>
                             <a href="<?= get_term_link(19) ?>" class="btn btn-danger btn-2x">Подробнее</a>
                         </div>
                     </div>
@@ -134,7 +135,7 @@
                 <div class="card border">
                     <a href="/product-category/konservatsiya/delikatesy/"><img src="<?= get_template_directory_uri() ?>/images/osminog.jpg" class="card-img-top" style="object-fit:cover;height:230px" alt="морские деликатесы"></a>
                     <div class="card-body">
-                      <h5 class="card-title">Морксие деликатесы</h5>
+                      <h5 class="card-title">Морские деликатесы</h5>
                       <p class="card-text">Употребление в пищу таких продуктов, как осьминог и морской гребешок способствует укреплению сосудов, мышц сердца, обновлению клеток...</p>
     				<a href="/product-category/konservatsiya/delikatesy/" class="btn btn-primary">Подробнее</a>
                     </div>
