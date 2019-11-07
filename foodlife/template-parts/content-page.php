@@ -42,6 +42,21 @@
 
                 <div class="col-12 text-center p-3 my-3">
                     <h1><?= the_title() ?></h1>
+                    <?php 
+                    // вывести блок под заголовком категории по id
+                    global $wp_query;
+                    // get the query object
+                    $cat_obj = $wp_query->get_queried_object();
+                    //print_r($cat_obj);
+                    if ($cat_obj->term_id == 19) {
+                        echo '
+                            <div class="d-block text-center mt-5 mb-3 p-0">
+                                <div class="d-inline-block border p-3 mx-2 mb-2"><i class="fa fa-check fa-2x text-success mr-3 align-middle"></i>100% натуральное мясо краба</div>
+                                <div class="d-inline-block border p-3 mx-2 mb-2"><i class="fa fa-shield-alt fa-2x text-success mr-3 align-middle"></i>Продукция <a href="#" data-toggle="modal" data-target="#sertificates" class="text-dark text-underline">сертифицирована</a></div>
+                            </div>
+                        ';
+                    }
+                    ?>
                 </div>
                 
                 <?php
