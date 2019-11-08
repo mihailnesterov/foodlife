@@ -87,6 +87,33 @@ a img:hover {
     flex-wrap: nowrap !important;
 }
 
+/* order inputs bg image */
+.woocommerce ul#shipping_method li input[type="radio"] {
+    display:none;
+}
+.woocommerce ul#shipping_method li input[type="radio"] + label { 
+    background: url('/wp-content/themes/foodlife/images/unchecked.png') no-repeat round;
+    padding-left:30px;
+    cursor: pointer;
+}
+.woocommerce ul#shipping_method li input[type="radio"]:hover + label { 
+    opacity:0.8;
+    text-decoration: underline;
+}
+.woocommerce ul#shipping_method li input[type="radio"]:checked + label {
+    background: url('/wp-content/themes/foodlife/images/checked.png') no-repeat round;
+    padding-left:30px;
+    text-decoration: underline;
+}
+.woocommerce ul#shipping_method li input[type="radio"] + label span.woocommerce-Price-amount { 
+    color: #666;
+    padding-left: 3px;
+    padding-right: 3px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.06);
+}
+
+/* footer */
+
 footer a {
   color: #bbb;
   text-decoration: underline;
