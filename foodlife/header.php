@@ -43,7 +43,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top border-bottom">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="<?= get_template_directory_uri() ?>/images/logo1.png" alt="foodlife.shop" class="img-fluid">
+                <img src="<?= get_template_directory_uri() ?>/images/logo.jpg" alt="foodlife.shop" class="img-fluid">
             </a>
             <div class="d-none d-md-block p-3 align-middle small">
                 <p class="p-0 m-0">
