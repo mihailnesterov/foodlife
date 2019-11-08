@@ -142,8 +142,29 @@
                 </div> <!-- ./card -->
             </div>
 
+
             <!-- вывод товаров каталога -->
             <div class="row">
+
+                <!-- action banner -->
+                <div class="col-12 -d-none shadow-sm mt-4 mb-4">
+                    <div class="row">
+                        <div class="col-9 col-md-11 p-2 text-center">
+                            <h5 class="my-1 text-primary">При заказе от 5000 рублей:</h5>
+                            
+                            <div class="mb-1">
+                                <div class="d-inline-block p-2 mr-2"><i class="fa fa-gift mr-2 text-success"></i>Банка семги в подарок (семга в оливковом масле / стекло / 200 гр)</div>
+                                <div class="d-inline-block p-2 mr-2"><i class="fa fa-truck mr-2 text-success"></i>Бесплатная доставка</div>
+                                <div class="d-none p-2"><i class="fa fa-tags mr-2 text-success"></i>Купон на 300 рублей</div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-3 col-md-1 p-3">
+                            <img src="/wp-content/uploads/2019/10/semga-200-shirota-50-1.jpg" alt="Семга в масле в подарок" class="img-fluid img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-12 text-center p-3 my-3">
                     <h2>Каталог продукции</h2>
                 </div>

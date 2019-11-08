@@ -61,9 +61,9 @@
             </div>
             <div class="d-none d-md-block pl-5 mt-2 text-right">
                 <h6 class="p-0 m-0 mb-2 mr-1">
-                    <a href="tel:+74993944623" onclick="ym(50325610, 'reachGoal', 'Phoneclick'); return true;" class="text-dark"><i class="fa fa-phone text-danger mr-1"></i>8 (499) 394 46 23</a>
+                    <a href="tel:+74959979148" class="text-dark"><i class="fa fa-phone text-danger mr-1"></i>8 (495) 997 91 48</a>
                 </h6>
-                <a href="#" onclick="ym(50325610, 'reachGoal', 'Callback'); return true;" data-toggle="modal" data-target="#feedback" class="text-right small bg-primary rounded text-light py-1 px-3 mr-1">обратный звонок</a>
+                <a href="#" data-toggle="modal" data-target="#feedback" class="text-right small bg-primary rounded text-light py-1 px-3 mr-1">обратный звонок</a>
             </div>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"

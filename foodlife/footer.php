@@ -52,9 +52,9 @@
                     <h5 class="text-primary">Контакты</h5>
                     <ul>
                         <li class="text-uppercase"><i class="fa fa-address-card mr-2 text-secondary"></i>FoodLife.shop</li>
-                        <li><i class="fa fa-phone mr-2 text-secondary"></i>8 (499) 394 46 23</li>
+                        <li><i class="fa fa-phone mr-2 text-secondary"></i>8 (495) 997 91 48</li>
                         <li><i class="fa fa-envelope mr-2 text-secondary"></i><a
-                                href="mailto:info@foodlife.shop">info@foodlife.shop</a></li>
+                            href="mailto:info@foodlife.shop">info@foodlife.shop</a></li>
                         <li><i class="fa fa-map-marker-alt mr-2 text-secondary"></i>Пункт самовывоза: г. Москва ул. Новодмитровская д.5А строение 1</li>
                         <li>
                             <a href="https://vk.com/shop_foodlife" target="_blank" title="Наша группа в ВК"><i class="fab fa-vk fa-2x mr-2 text-secondary"></i></a>

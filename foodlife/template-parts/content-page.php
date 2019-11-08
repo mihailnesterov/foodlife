@@ -7,6 +7,11 @@
  * @package foodlife.shop
  */
 
+global $wp_query;
+// get the query object
+$cat_obj = $wp_query->get_queried_object();
+// $cat_obj используется для работы с текущей категорией
+//print_r($cat_obj);
 ?>
 <!-- Page Content -->
 <div class="container animated fadeIn">
@@ -41,30 +46,33 @@
                 </div>
 
                 <!-- action banner -->
-                <div class="col-12 d-none border my-2 animated fadeIn">
-                    <div class="row p-2">
-                        
-                        <div class="col-8 col-md-11 text-center p-2">
-                            <h4 class="mb-3">Подарок при заказе от 5000 руб.</h4>
-
-                            <p class="mb-1">Банка семги в оливковом масле (стекло / 200 гр)</p>
-                            <p class="mb-1">Бесплатная доставка</p>
-                            <p class="mb-1">Купон на скидку 300 руб.</p>
+                <?php if ($cat_obj->term_id == 23): ?>
+                <div class="col-12 -d-none shadow-sm mt-2 mb-3">
+                    <div class="row">
+                        <div class="col-9 col-md-11 p-2 text-center">
+                            <h5 class="my-1 text-primary">При заказе от 5000 рублей:</h5>
+                            
+                            <div class="mb-1">
+                                <div class="d-inline-block p-2 mr-2"><i class="fa fa-gift mr-2 text-success"></i>Банка семги в подарок (семга в оливковом масле / стекло / 200 гр)</div>
+                                <div class="d-inline-block p-2 mr-2"><i class="fa fa-truck mr-2 text-success"></i>Бесплатная доставка</div>
+                                <div class="d-none p-2"><i class="fa fa-tags mr-2 text-success"></i>Купон на 300 рублей</div>
+                            </div>
+                            
                         </div>
-                        <div class="col-4 col-md-1 p-3 align-middle">
-                            <img src="/wp-content/uploads/2019/10/semga-200-shirota-50-1.jpg" alt="Семга в масле в подарок" class="img-fluid">
+                        <div class="col-3 col-md-1 p-3">
+                            <img src="/wp-content/uploads/2019/10/semga-200-shirota-50-1.jpg" alt="Семга в масле в подарок" class="img-fluid img-thumbnail">
                         </div>
                     </div>
                 </div>
+                <?php endif; ?>
 
                 <div class="col-12 text-center p-3 my-3">
                     <h1><?= the_title() ?></h1>
                     <?php 
                     // вывести блок под заголовком категории по id
-                    global $wp_query;
-                    // get the query object
-                    $cat_obj = $wp_query->get_queried_object();
-                    //print_r($cat_obj);
+                    /*
+                        19 = Мясо краба
+                    */
                     if ($cat_obj->term_id == 19) {
                         echo '
                             <div class="d-block text-center mt-5 mb-3 p-0">
