@@ -52,3 +52,27 @@ $('.ajax_add_to_cart').each(function() {
         $('#added-to-cart').modal();
     });
 });
+
+$(function() {
+    // shipping: show / hide radio if > 5000
+    $(document).ajaxSuccess(function() {
+        const $tag = $('td.text-center h5 span.woocommerce-Price-amount');
+        const $total = parseFloat($tag.text().replace(',',''));
+        if( $total >= 5000) {
+            $('#shipping_method li').each(function() {
+                const li = $(this);
+                if( $(li).find('input[type="radio"]').val() == 'free_shipping:5' ) {
+                    $(li).find('input[type="radio"]').click();
+                    $(li).find('input[type="radio"]').attr('checked', 'checked');
+                    $(li).show();
+                } else {
+                    $(li).hide();
+                }
+            });
+        }
+    });
+    
+});
+
+
+
